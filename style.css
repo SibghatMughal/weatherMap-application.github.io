@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    /* background-color: lightseagreen; */
+    background-image: url('https://apnawazirabad.com/wp-content/uploads/2015/12/FAR_2846-scaled.jpg');
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+.card{
+    background-color: rgb(34, 31, 31);
+    width: 500px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 30px;
+    opacity: .8;
+    box-shadow: 20px 20px 40px rgba(0,0,0, 0.5);
+    position: relative;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.search-bar{
+    background-color:black;
+    padding: 12px;
+    padding-left: 12px;
+    border: none;
+    color: white;
+    width: 370px;
+    border-radius: 24px;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    outline: none;
+    text-transform:capitalize;
+}
+
+.icon{
+    
+    border-radius: 50%;
+    border:none;
+    font-size: 34px;
+    cursor: pointer;
+    background-color:transparent;
+    color: lightgray;
+    outline: none;
+}
+.icon:hover{
+    font-size: 38px;
+    color: rgb(146, 26, 26);
+}
+.flex{
+    display: flex;
+    align-items: center;
+    
+}
+
+.weather{
+    font-size: 16px;
+    position: absolute;
+    top: 68px;
+    left: 25px;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    
+}
+
+.weather.loading{
+    visibility: hidden;
+}
+.weather.loading::after{
+    visibility: visible;
+    content: "Loading......";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 40px;
+    font-size: 50px;
+
+}
